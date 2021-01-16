@@ -351,6 +351,8 @@ The improvments that we can work on are first of all the primary metric cause mo
 
 So far we have two trained models, One delivered by Auto ML and the other by Hyperparameter tuning. In our case we use the most accurate which is the Auto ML generated model which for it's deployment will require the inference configuration including the scoring and environment script and configure the deployment such the choice of the platform AKS or container instances CPU or GPU and so on.
 
+Before we jump into the deployment let's compare the two models, The first one is the trained by the Auto ML where the `VotingEnsemble` algorithm trained the best model with an accuracy level of : 0.7336771895659304. On the other hand the model that we trained by tuning the hyperparameters using Hyperdrive concluded into the following values of the `Regularization Strength` : 2.0 and the `Max Iterations`: 200 which led to an accuracy level of 0.729757085020243. Based on the accuracy level produced by the models the Auto ML trained model is more accurate and therefor that's the one that we will deploy.  
+
 To Demo the deployed model we will send json paylod and explore the response as shown in the screenshot
 
 ![alt text](https://github.com/ahmedkhammessi/nd00333-capstone/blob/master/starter_file/screens/deployedmodel-test.PNG)
@@ -358,6 +360,14 @@ To Demo the deployed model we will send json paylod and explore the response as 
 This the deployed model in a Healthy state
 
 ![alt text](https://github.com/ahmedkhammessi/nd00333-capstone/blob/master/starter_file/screens/active-model.PNG)
+
+## Standout Suggestions
+
+Auto ML comes with a bunch of features out of the box, For this project I enabled loggin in the deployed web app and application insights as shown here in the screenshots
+
+![alt text](https://github.com/ahmedkhammessi/nd00333-capstone/blob/master/starter_file/screens/suggestions-appinsights.PNG)
+
+![alt text](https://github.com/ahmedkhammessi/nd00333-capstone/blob/master/starter_file/screens/suggestions-logs.PNG)
 
 ## Screen Recording
 https://youtu.be/013VjKdpxAc
