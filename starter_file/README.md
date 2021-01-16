@@ -370,4 +370,4 @@ Auto ML comes with a bunch of features out of the box, For this project I enable
 ![alt text](https://github.com/ahmedkhammessi/nd00333-capstone/blob/master/starter_file/screens/suggestions-logs.PNG)
 
 ## Screen Recording
-https://youtu.be/013VjKdpxAc
+https://youtu.be/2nZ0sAdU7GE
